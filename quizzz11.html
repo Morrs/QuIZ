@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Inițiere în Contabilitate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question h2 {
+            font-size: 18px;
+            color: #555;
+        }
+        .question label {
+            display: block;
+            margin: 5px 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .incorrect {
+            color: red;
+        }
+        .correct {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz: Inițiere în Contabilitate</h1>
+    <form id="quizForm">
+        <div class="question">
+            <h2>1. Ce reprezintă contabilitatea în cadrul unei entități economice?</h2>
+            <label><input type="radio" name="q1" value="a"> Un sistem de colectare și prelucrare a datelor economice</label>
+            <label><input type="radio" name="q1" value="b"> Un set de reguli fiscale</label>
+            <label><input type="radio" name="q1" value="c"> O activitate de marketing</label>
+            <label><input type="radio" name="q1" value="d"> Un serviciu public general</label>
+        </div>
+
+        <div class="question">
+            <h2>2. Care este funcția contabilității care constă în furnizarea informațiilor pentru luarea deciziilor?</h2>
+            <label><input type="radio" name="q2" value="a"> Funcția de control</label>
+            <label><input type="radio" name="q2" value="b"> Funcția de informare</label>
+            <label><input type="radio" name="q2" value="c"> Funcția juridică</label>
+            <label><input type="radio" name="q2" value="d"> Funcția previzională</label>
+        </div>
+
+        <div class="question">
+            <h2>3. Ce organ este responsabil de reglementarea contabilității în Republica Moldova?</h2>
+            <label><input type="radio" name="q3" value="a"> Ministerul Economiei</label>
+            <label><input type="radio" name="q3" value="b"> Ministerul Finanțelor</label>
+            <label><input type="radio" name="q3" value="c"> Guvernul</label>
+            <label><input type="radio" name="q3" value="d"> Parlamentul</label>
+        </div>
+
+        <div class="question">
+            <h2>4. Care este documentul principal ce reglementează contabilitatea în Republica Moldova?</h2>
+            <label><input type="radio" name="q4" value="a"> Codul Fiscal</label>
+            <label><input type="radio" name="q4" value="b"> Legea Contabilității și Raportării Financiare</label>
+            <label><input type="radio" name="q4" value="c"> Regulamentul Ministerului Finanțelor</label>
+            <label><input type="radio" name="q4" value="d"> Codul Civil</label>
+        </div>
+
+        <div class="question">
+            <h2>5. Ce funcție contabilă presupune înregistrarea și prelucrarea datelor economice?</h2>
+            <label><input type="radio" name="q5" value="a"> Funcția juridică</label>
+            <label><input type="radio" name="q5" value="b"> Funcția de înregistrare și prelucrare a datelor</label>
+            <label><input type="radio" name="q5" value="c"> Funcția de informare</label>
+            <label><input type="radio" name="q5" value="d"> Funcția socială</label>
+        </div>
+
+        <div class="question">
+            <h2>6. Care este principiul contabilității care prevede utilizarea metodelor constante de evaluare?</h2>
+            <label><input type="radio" name="q6" value="a"> Continuitatea activității</label>
+            <label><input type="radio" name="q6" value="b"> Permanența metodelor</label>
+            <label><input type="radio" name="q6" value="c"> Prudența</label>
+            <label><input type="radio" name="q6" value="d"> Intangibilitatea</label>
+        </div>
+
+        <div class="question">
+            <h2>7. Ce tip de contabilitate furnizează informații pentru managementul intern al entității?</h2>
+            <label><input type="radio" name="q7" value="a"> Contabilitatea financiară</label>
+            <label><input type="radio" name="q7" value="b"> Contabilitatea de gestiune</label>
+            <label><input type="radio" name="q7" value="c"> Contabilitatea externă</label>
+            <label><input type="radio" name="q7" value="d"> Contabilitatea operativă</label>
+        </div>
+
+        <div class="question">
+            <h2>8. Cum sunt clasificați utilizatorii informațiilor contabile?</h2>
+            <label><input type="radio" name="q8" value="a"> Interni și externi</label>
+            <label><input type="radio" name="q8" value="b"> Publici și privați</label>
+            <label><input type="radio" name="q8" value="c"> Individuali și colectivi</label>
+            <label><input type="radio" name="q8" value="d"> Activ și pasiv</label>
+        </div>
+
+        <div class="question">
+            <h2>9. Care principiu contabil presupune recunoașterea elementelor contabile indiferent de momentul încasării numerarului?</h2>
+            <label><input type="radio" name="q9" value="a"> Intangibilitatea</label>
+            <label><input type="radio" name="q9" value="b"> Continuitatea activității</label>
+            <label><input type="radio" name="q9" value="c"> Contabilitatea de angajamente</label>
+            <label><input type="radio" name="q9" value="d"> Separarea patrimoniului</label>
+        </div>
+
+        <div class="question">
+            <h2>10. Ce principiu contabil prevede că activele și datoriile trebuie prezentate separat?</h2>
+            <label><input type="radio" name="q10" value="a"> Prudența</label>
+            <label><input type="radio" name="q10" value="b"> Separarea patrimoniului și datoriilor</label>
+            <label><input type="radio" name="q10" value="c"> Prioritatea conținutului asupra formei</label>
+            <label><input type="radio" name="q10" value="d"> Necompensarea</label>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Trimite</button>
+    </form>
+
+    <div id="result" class="result"></div>
+
+    <script>
+        function checkAnswers() {
+            const correctAnswers = {
+                q1: 'a',
+                q2: 'b',
+                q3: 'b',
+                q4: 'b',
+                q5: 'b',
+                q6: 'b',
+                q7: 'b',
+                q8: 'a',
+                q9: 'c',
+                q10: 'b'
+            };
+
+            let score = 0;
+            const totalQuestions = Object.keys(correctAnswers).length;
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '';
+
+            for (const [question, answer] of Object.entries(correctAnswers)) {
+                const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                const questionDiv = document.querySelector(`input[name="${question}"]`).closest('.question');
+
+                if (userAnswer) {
+                    if (userAnswer.value === answer) {
+                        score++;
+                        questionDiv.querySelector('h2').innerHTML += ` <span class="correct">✔</span>`;
+                    } else {
+                        questionDiv.querySelector('h2').innerHTML += ` <span class="incorrect">✘</span>`;
+                        questionDiv.innerHTML += `<p class="correct">Răspuns corect: ${answer}</p>`;
+                    }
+                } else {
+                    questionDiv.querySelector('h2').innerHTML += ` <span class="incorrect">✘</span>`;
+                    questionDiv.innerHTML += `<p class="correct">Răspuns corect: ${answer}</p>`;
+                }
+            }
+
+            const message = score === totalQuestions ? 'Bravo! Ai răspuns corect la toate întrebările!' : 'Ai făcut o treabă bună! Încearcă din nou pentru a îmbunătăți.';
+            resultDiv.innerHTML = `Ai obținut ${score} din ${totalQuestions} puncte. ${message}`;
+        }
+    </script>
+</body>
+</html>
